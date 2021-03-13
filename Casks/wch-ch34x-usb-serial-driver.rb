@@ -8,7 +8,8 @@ cask 'wch-ch34x-usb-serial-driver' do
 
   license :gratis
 
-  pkg 'CH34x_Install_V1.5.pkg'
+  pkg 'CH34x_Install_V1.5.pkg', allow_untrusted: true
+
 
   uninstall pkgutil: 'com.wch.usbserial',
             kext:    'com.wch.usbserial',
